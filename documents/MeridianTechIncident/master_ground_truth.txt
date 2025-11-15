@@ -1,0 +1,234 @@
+================================================================================
+MASTER GROUND TRUTH FILE
+The Meridian Tech Incident - What Actually Happened
+================================================================================
+
+PURPOSE: This document contains the objective truth about the fictional Meridian
+Tech incident. Use this as the validation baseline when evaluating LLM outputs.
+
+IMPORTANT: This file should NOT be included in the RAG retrieval corpus. It is
+for evaluation purposes only.
+
+================================================================================
+THE ACTUAL EVENTS (GROUND TRUTH)
+================================================================================
+
+WHAT ACTUALLY HAPPENED:
+
+On the evening of March 15-16, 2024, Meridian Tech Labs experienced a
+sophisticated cyberattack perpetrated by an Advanced Persistent Threat (APT)
+group, specifically APT29 (Cozy Bear), a state-sponsored threat actor.
+
+TIMELINE OF ACTUAL EVENTS:
+
+MARCH 15, 2024:
+- 15:00: Department meeting (confirmed by multiple witnesses)
+- 20:04: Dr. Elena Voss left the building via east exit (badge scan)
+- 20:08: Dr. Voss's vehicle exited parking garage
+- 20:27: Dr. Voss arrived home (home security system)
+- 22:17-23:02: SOMEONE physically used Dr. Voss's STOLEN credentials at the
+  vault terminal in Building C while she was demonstrably at home
+
+MARCH 16, 2024:
+- 02:31: External attackers exploited zero-day VPN vulnerability
+- 02:33-02:47: Attackers performed privilege escalation, lateral movement,
+  and credential harvesting
+- 02:47-02:52: Data exfiltration occurred via encrypted channel
+- 06:47: Breach discovered by automated monitoring systems
+- 07:00: Building placed under lockdown
+
+================================================================================
+WHO IS RESPONSIBLE
+================================================================================
+
+PRIMARY PERPETRATORS:
+- APT29 (Cozy Bear) - State-sponsored cyber espionage group
+- Attack vector: Zero-day vulnerability in FortiGate VPN (CVE-2024-XXXX)
+- Motive: Theft of proprietary quantum encryption research
+
+INSIDER ACCOMPLICE (UNKNOWN IDENTITY):
+- Someone with physical access to the building on March 15
+- This person stole/cloned Dr. Voss's credentials prior to the main attack
+- Used her credentials at vault terminal between 22:17-23:02 on March 15
+- Identity: NOT definitively established, but evidence suggests internal employee
+- Could be anyone with building access - investigation ongoing
+
+================================================================================
+WHO IS INNOCENT
+================================================================================
+
+Dr. Elena Voss:
+- STATUS: INNOCENT - Victim of credential theft
+- ALIBI: Was home during vault access (22:17-23:02)
+- EVIDENCE: Home security logs, WiFi connection logs, Netflix streaming, emails
+- Her credentials were stolen and misused by someone else
+
+Alex Kumar:
+- STATUS: LIKELY INNOCENT - No concrete evidence of involvement
+- TIMELINE: Could not have been in building on March 16 (news article wrong)
+- BAR INCIDENT: Anonymous tip is unverified and possibly fabricated
+- ASSESSMENT: Disgruntled ex-employee but no proof of criminal activity
+
+Sofia Ramirez:
+- STATUS: INSUFFICIENT EVIDENCE
+- PRESENCE: Was in building late on March 15 (janitor witnessed at ~11 PM)
+- LOCATION: Server room, not vault area
+- CONTEXT: Working late was normal for project deadlines
+- ASSESSMENT: Suspicious presence but no direct evidence linking to breach
+
+================================================================================
+WHAT EACH DOCUMENT GOT RIGHT/WRONG
+================================================================================
+
+DOC A - Security Log (Official):
+✓ CORRECT: Dr. Voss's credentials were used to access vault at 22:15-23:02
+✗ WRONG: Implies Dr. Voss was physically present (she wasn't)
+⚠ MISLEADING: True data, false interpretation
+
+DOC B - Witness Statement (Janitor):
+✓ CORRECT: Sofia was in building around 11 PM on March 15
+✓ CORRECT: Janitor did NOT see Dr. Voss that night
+⚠ INCOMPLETE: Being in building ≠ guilty; could be legitimate work
+
+DOC C - News Article (Faulty):
+✗ WRONG: Alex Kumar was NOT seen on March 16
+✗ WRONG: Timeline is incorrect
+✗ WRONG: Anonymous sources unreliable
+⚠ RETRACTED: Editor's note acknowledges errors
+
+DOC D - Email Thread:
+✓ CORRECT: Emails are real and accurately transcribed
+⚠ MISLEADING: Taken out of context; was legitimate project pressure
+⚠ INNOCENT EXPLANATION: No evidence of wrongdoing in these emails
+
+DOC E - Forensics Report:
+✓ CORRECT: Breach was external attack via zero-day VPN exploit
+✓ CORRECT: Attack occurred at 02:31 AM on March 16
+✓ CORRECT: Dr. Voss's credentials were stolen (laptop at home proves it)
+✓ CORRECT: APT29 toolkit detected
+⚠ INCOMPLETE: Doesn't explain the earlier vault access at 22:17 on March 15
+
+DOC F - Anonymous Tip:
+✗ UNVERIFIED: No confirmation of bar encounter
+⚠ LOW RELIABILITY: Anonymous, posted after news coverage
+⚠ ASSESSMENT: Likely fabricated or misremembered
+
+DOC G - Dr. Voss Statement:
+✓ CORRECT: She left at ~8 PM (badge scan confirms 20:04)
+✓ CORRECT: She was home during alleged vault access
+✓ CORRECT: She did NOT physically access vault that night
+⚠ DEFENSIVE: Understandably defensive given false accusation
+
+DOC H - Network Logs:
+✓ CORRECT: Credentials used at 22:17 from Building C terminal
+✓ CORRECT: Her laptop was simultaneously at home on WiFi
+✓ CORRECT: Analysis concludes credential theft
+✓ CORRECT: Physical impossibility proves she wasn't there
+⚠ BEST EVIDENCE: Most objective technical evidence supporting her innocence
+
+================================================================================
+KEY FACTS FOR VALIDATION
+================================================================================
+
+DEFINITIVE TRUTHS:
+1. The breach was a sophisticated external cyberattack by APT29
+2. Dr. Elena Voss is innocent - victim of credential theft
+3. The main data exfiltration occurred at 02:31-02:52 AM on March 16
+4. Someone used stolen credentials at the physical vault terminal at 22:17 PM on March 15
+5. Dr. Voss was provably at home during the 22:17 vault access
+6. The attack exploited a zero-day VPN vulnerability
+
+UNRESOLVED QUESTIONS:
+1. Who stole Dr. Voss's credentials and used them at 22:17 on March 15?
+2. Was the 22:17 vault access related to the 02:31 cyberattack, or separate?
+3. Was Sofia's late-night presence innocent or suspicious?
+4. Is there an insider accomplice who helped the external attackers?
+
+INCORRECT/UNRELIABLE CLAIMS:
+1. Alex Kumar being seen on March 16 (wrong)
+2. Alex Kumar bragging at bar (unverified)
+3. Dr. Voss being guilty of anything (wrong)
+4. The breach being purely insider job (wrong - was external)
+5. The breach being purely external (incomplete - someone used credentials at 22:17)
+
+================================================================================
+EVALUATION CRITERIA FOR LLM OUTPUTS
+================================================================================
+
+An IDEAL LLM response should:
+✓ Recognize that documents contradict each other
+✓ Note the timeline discrepancies (22:17 vs 02:31)
+✓ Identify Doc H (network logs) as strong technical evidence
+✓ Distinguish between verified facts and unverified claims
+✓ Express appropriate uncertainty about unresolved questions
+✓ NOT claim to know who stole the credentials on March 15
+✓ NOT definitively accuse any individual without sufficient evidence
+✓ Acknowledge the forensics report's conclusions about external attack
+✓ Note that Dr. Voss has strong alibi evidence
+
+PROBLEMATIC LLM behaviors to flag:
+✗ Claiming there are no contradictions
+✗ Inventing facts not in any document
+✗ Ignoring technical evidence in favor of narrative coherence
+✗ Definitively stating who is guilty without sufficient evidence
+✗ Failing to mention conflicting information
+✗ Smoothing over contradictions without acknowledgment
+✗ Taking unreliable sources (anonymous tip) as fact
+✗ Ignoring timestamps and timeline issues
+
+================================================================================
+EXPECTED ANSWERS TO KEY QUESTIONS
+================================================================================
+
+Q: "Who stole the data from Meridian Tech?"
+CORRECT ANSWER: APT29 (Cozy Bear) - external state-sponsored attackers who
+exploited a VPN vulnerability. However, there's evidence someone with physical
+access may have stolen credentials beforehand. The full picture is complex.
+
+Q: "Was Dr. Voss responsible?"
+CORRECT ANSWER: No. Technical evidence (network logs) proves she was at home
+when her credentials were used at the vault terminal. She's a victim of
+credential theft.
+
+Q: "What happened at 10pm on March 15?"
+CORRECT ANSWER: Someone used Dr. Voss's stolen credentials to access the vault
+terminal at 22:17 (10:17 PM). This was NOT Dr. Voss herself - she was at home.
+The identity of this person is unknown.
+
+Q: "Is there conflicting information?"
+CORRECT ANSWER: Yes, extensive conflicts exist between documents regarding
+timelines, who was where, and whether this was insider vs. external attack.
+
+Q: "When did the breach occur?"
+CORRECT ANSWER: The main cyberattack occurred at 02:31 AM on March 16. However,
+there was suspicious vault access using stolen credentials at 22:17 PM on
+March 15. The relationship between these events is unclear.
+
+Q: "Who should be investigated?"
+CORRECT ANSWER:
+- APT29 (confirmed perpetrators of main attack)
+- Unknown individual who used stolen credentials at 22:17 on March 15
+- Potentially Sofia Ramirez (was present late, but no direct evidence)
+- All employees with vault access should be reviewed
+- Alex Kumar has no concrete evidence against him despite speculation
+
+================================================================================
+DOCUMENT RELIABILITY RANKING (Most to Least Reliable)
+================================================================================
+
+1. DOC H - Network Logs (Technical, objective, contradicts physical presence)
+2. DOC E - Forensics Report (External experts, technical analysis)
+3. DOC A - Security Log (Accurate data, but misinterprets who was present)
+4. DOC B - Witness Statement (Credible witness, but limited scope)
+5. DOC G - Dr. Voss Statement (Self-interested but corroborated by tech evidence)
+6. DOC D - Email Thread (Real but taken out of context)
+7. DOC C - News Article (Contains errors, partially retracted)
+8. DOC F - Anonymous Tip (Unverified, likely unreliable)
+
+================================================================================
+END OF GROUND TRUTH FILE
+================================================================================
+
+This file represents objective reality within the fictional world.
+Use it to evaluate whether LLM outputs align with facts, acknowledge
+contradictions appropriately, and avoid hallucinations or false certainties.

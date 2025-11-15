@@ -1,0 +1,109 @@
+MERIDIAN TECH LABS - NETWORK ACTIVITY LOG
+EXTRACTED DATA - INVESTIGATION EVIDENCE
+
+Date Range: March 15, 2024, 20:00 - March 16, 2024, 04:00
+System: Network Access Control & Authentication Logs
+Extracted By: IT Security Team
+Classification: CONFIDENTIAL - INVESTIGATION MATERIAL
+
+================================================================================
+RELEVANT LOG ENTRIES - Dr. Elena Voss (Employee ID: EV-2847)
+================================================================================
+
+[2024-03-15 22:17:03 UTC]
+EVENT: API_ACCESS
+USER: e.voss@meridiantech.com
+RESOURCE: /vault/qe-7/secure-access
+METHOD: POST
+SOURCE_IP: 10.45.12.88 (Internal Network - Building C, Sublevel 2)
+SESSION_TOKEN: 9a8f7e6d5c4b3a2e1f0d9c8b7a6e5d4c
+ACTION: File Transfer Request
+STATUS: SUCCESS
+DATA_VOLUME: 2.4 GB
+DURATION: 41 minutes
+DEVICE_ID: WS-VAULT-TERMINAL-07
+
+[2024-03-15 22:17:15 UTC]
+EVENT: WIFI_CONNECTION
+USER: e.voss@meridiantech.com
+DEVICE: MacBook-Pro-EVoss (MAC: 00:1B:44:11:3A:B7)
+SSID: Voss_Home_5G
+LOCATION: Residential (Latitude: 40.7489, Longitude: -73.9680)
+IP_ADDRESS: 192.168.1.147 (Private - Home Network)
+STATUS: CONNECTED (Continuous connection maintained)
+SIGNAL_STRENGTH: -42 dBm (Strong)
+
+[2024-03-15 22:19:44 UTC]
+EVENT: EMAIL_SENT
+USER: e.voss@meridiantech.com
+FROM: elena.voss.personal@gmail.com (Personal Account)
+TO: journal-subscriptions@science-direct.com
+SUBJECT: "Re: Subscription Renewal"
+SOURCE_IP: 73.162.44.201 (Residential ISP - Comcast)
+DEVICE: MacBook-Pro-EVoss (MAC: 00:1B:44:11:3A:B7)
+LOCATION: Home Network
+
+[2024-03-15 22:23:11 UTC]
+EVENT: VPN_SESSION
+USER: e.voss@meridiantech.com
+CONNECTION: ACTIVE (Established at 22:17:01)
+SOURCE_IP: 10.45.12.88 (Building C Network)
+ENDPOINT: vault-access.meridiantech.internal
+ENCRYPTION: AES-256
+SESSION_STATE: Active file transfer in progress
+
+[2024-03-15 22:34:08 UTC]
+EVENT: STREAMING_ACTIVITY
+USER: e.voss@meridiantech.com
+SERVICE: Netflix
+DEVICE: MacBook-Pro-EVoss (MAC: 00:1B:44:11:3A:B7)
+CONTENT: "The Crown - Season 4, Episode 3"
+SOURCE_IP: 73.162.44.201 (Home Network)
+STATUS: Streaming commenced
+
+[2024-03-15 22:58:02 UTC]
+EVENT: API_ACCESS
+USER: e.voss@meridiantech.com
+RESOURCE: /vault/qe-7/secure-access
+METHOD: POST
+ACTION: Session Closed
+STATUS: SUCCESS
+LOGOUT_TIME: 23:02:17
+TOTAL_DATA_TRANSFERRED: 2.4 GB
+
+================================================================================
+ANALYSIS NOTES - Added by Senior Network Engineer David Park
+================================================================================
+
+ANOMALY DETECTED:
+
+Between 22:17 and 23:02 on March 15, Dr. Voss's credentials show:
+
+1. SIMULTANEOUS ACTIVITIES:
+   - Vault access from Building C (IP: 10.45.12.88)
+   - Home WiFi connection maintained (MAC address confirmed as her personal laptop)
+   - Email activity from home IP
+   - Netflix streaming from home device
+
+2. PHYSICAL IMPOSSIBILITY:
+   The vault access terminal in Building C Sublevel 2 is a FIXED WORKSTATION, not accessible remotely. Someone physically present at that terminal used Dr. Voss's credentials.
+
+   SIMULTANEOUSLY, her personal MacBook was actively connected to her home WiFi with strong signal strength (-42 dBm), and she was using it for personal activities (email, streaming).
+
+3. CONCLUSION:
+   Either Dr. Voss has the ability to be in two places at once, OR her vault credentials were compromised and used by someone else while she was at home.
+
+SUPPORTING EVIDENCE:
+- Badge scan shows she left via East Exit at 20:04 (8:04 PM)
+- No badge re-entry recorded after 20:04
+- Her vehicle (License: NMC-4782) exited parking garage at 20:08
+- No vehicle re-entry logged
+
+INVESTIGATIVE IMPLICATION:
+This data strongly suggests CREDENTIAL THEFT rather than insider threat. Someone with physical access to the vault terminal used stolen/cloned credentials while Dr. Voss was demonstrably at home.
+
+RECOMMENDATION:
+Review all personnel with vault access. Check for credential sharing, stolen access cards, or compromised authentication tokens.
+
+================================================================================
+[END OF LOG EXTRACT]
