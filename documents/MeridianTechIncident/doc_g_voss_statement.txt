@@ -1,0 +1,63 @@
+PERSONAL STATEMENT
+Dr. Elena Voss
+
+Date: March 17, 2024
+To: Meridian Tech Labs Legal Department & NMPD Investigation Team
+RE: Incident of March 15-16, 2024
+
+I am providing this statement voluntarily to clarify my whereabouts and actions on the evening of March 15, 2024, in light of the security incident currently under investigation.
+
+TIMELINE OF MY ACTIVITIES - MARCH 15, 2024:
+
+3:00 PM - 4:15 PM: Attended departmental meeting (multiple witnesses can confirm)
+
+4:15 PM - 6:30 PM: Worked in my office on Project Quantum documentation. I was preparing materials for Sofia Ramirez to review, as we discussed via email on March 14.
+
+6:30 PM - 7:45 PM: Had dinner in the building cafeteria. I ate alone while reviewing papers. Security cameras and my credit card statement can confirm this.
+
+7:45 PM - 8:00 PM: Returned to my office, packed my belongings, and prepared to leave for the day.
+
+8:00 PM: Left Meridian Tech Labs. I scanned my badge at the east exit (this should be logged).
+
+8:25 PM - 10:30 PM: Drove home (approximately 20-minute commute), arrived home around 8:25 PM. I live alone, so I cannot provide a witness, but my home security system logs should show my arrival. I spent the evening reading and responding to emails from my personal laptop.
+
+10:30 PM onwards: I was preparing for bed. I did not leave my home. I did not access the vault. I did not return to the lab.
+
+CRITICAL POINT:
+I am aware that security logs allegedly show vault access under my credentials at 10:15 PM on March 15. I want to state categorically and unequivocally: I DID NOT ACCESS THE VAULT THAT EVENING.
+
+If my credentials were used, it was not by me. I was at home.
+
+SUPPORTING EVIDENCE I CAN PROVIDE:
+1. Home security system logs showing my entry at 8:27 PM and no departure
+2. My laptop's WiFi connection logs showing continuous connection to my home network from 8:30 PM through midnight
+3. Email activity from my personal account sent from home IP address between 9:00 PM and 10:45 PM
+4. My car's GPS records (if accessible) showing the drive home and no subsequent trips
+
+CONTEXT:
+I have worked at Meridian Tech Labs for seven years. I have Level 5 clearance because I am trusted. I have no financial problems, no reason to steal proprietary data, and no motive whatsoever to compromise the project I have dedicated years of my life to building.
+
+If someone used my credentials, I am a victim of credential theft, not a perpetrator.
+
+I am deeply distressed that I am under suspicion. I have cooperated fully with this investigation and will continue to do so. I have nothing to hide.
+
+I am requesting that:
+1. My home security and network logs be examined
+2. The physical security badge scans be reviewed carefully
+3. Any biometric data (if available) be analyzed to verify identity
+
+I did not do this. I left work at 8 PM and I did not return.
+
+---
+
+Dr. Elena Voss
+Chief AI Researcher
+Meridian Tech Labs
+
+Signed: [signature on file]
+Date: March 17, 2024
+
+---
+
+LEGAL COUNSEL NOTE:
+Dr. Voss provided this statement in the presence of her attorney. She has agreed to full cooperation with the investigation including providing personal device logs and home security records. She maintains her innocence and believes she is a victim of sophisticated credential theft.
