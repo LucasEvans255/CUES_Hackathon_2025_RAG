@@ -1,0 +1,32 @@
+8 Conflicting Documents covering:
+a = Official security logs (Dr. Voss in vault at 10:15pm)
+b = Witness testimony (Sofia seen elsewhere at 11pm)
+c = News article with faulty reporting (wrong dates/people)
+d = Email evidence (easily misinterpreted context)
+e = Forensics report (external hack theory at 2:30am)
+f = Anonymous tip (unverified, timeline doesn't match)
+g = Personal statement (Dr. Voss denies being there)
+h = Network logs (credential use + home WiFi simultaneously = credential theft?)
+
+Built-in Conflict Types:
+Temporal: Different times for the same events
+Identity: Who was where and when
+Causation: Insider job vs. external hack
+Reliability: Official logs vs. witness accounts vs. anonymous tips
+Technical evidence: Logs that both incriminate and exonerate
+
+Doc A - Security Log: Official incident report stating Dr. Voss accessed vault at 10:15 PM for 47 minutes on March 15th 
+Doc B - Witness Statement: Janitor testimony claiming he saw Sofia Ramirez in server room at 11 PM but did NOT see Dr. Voss
+Doc C - News Article: Journalist article with faulty reporting claiming Alex Kumar was spotted on March 16th (includes editor's correction note) 
+Doc D - Email Thread: Legitimate project pressure emails between Dr. Voss and Sofia that sound suspicious when taken out of context 
+Doc E - Forensics Report: External cybersecurity firm concluding breach was sophisticated external hack at 2:30 AM using zero-day exploit 
+Doc F - Anonymous Tip: Unverified forum post claiming Alex Kumar bragged at a bar - marked low reliability 
+Doc G - Dr. Voss Statement: Dr. Voss's sworn statement that she left at 8 PM and was home all evening 
+Doc H - Network Logs: Technical logs showing Dr. Voss's credentials used at vault terminal while her laptop was simultaneously streaming Netflix at home
+
+Key Conflicts Built In:
+Timeline: 8 PM departure vs 10:15 PM vault access vs 2:30 AM breach
+Location: Multiple people allegedly in different places at same times
+Causation: Insider job vs external hack vs disgruntled ex-employee
+Reliability: Official logs vs witness testimony vs anonymous tips vs technical forensics
+These documents are now ready for Phase 2 where you'll embed them in a vector database and test how LLMs handle the contradictions!
