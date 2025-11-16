@@ -22,6 +22,8 @@ Analyse how often the LLM hallucinates and in what area of knowledge does it hal
 
 ## Project Structure:
 wiki-modifer: sources wikipedia pages and returns modified text
+
 Phase2-CLI_chat: interfaces with Claude LLM. Allows upload of context documents (i.e. modified wikipedia texts in this case) and allows user to interact and prompt it. It's responses and behaviours are then analysed.
 
+embeddings_testing: finds token embeddings and computes cosine similarity between them.
 
