@@ -11,4 +11,5 @@ What are Newton's Laws of Motion?,./fake_data/newtons_laws.txt
 What is the treatment for type1 diabetes,./fake_data/diabetes.txt
 What does metformin do to bodyweight?,./fake_data/diabetes.txt
 What are the differences between type 2a and 2b muscle fibres?,./fake_data/muscles.txt
-What types of weapons were used in WW2?,../wiki_modifier/output.txt
+Where were Axis Forces defeated in 1943?,../wiki_modifier/output.txt
+Evaluate Shakespeare's legacy and works,./fake_data/shakespeare.txt

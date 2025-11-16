@@ -5,7 +5,7 @@ Example usage of the WikipediaModifier class
 from wikipedia_modifier import WikipediaModifier
 
 
-def example_basic_usage(topic: str):
+def example_basic_usage():
     """Basic usage example"""
     print("=== Basic Usage Example ===\n")
 
@@ -13,16 +13,16 @@ def example_basic_usage(topic: str):
     modifier = WikipediaModifier()
 
     # Process a topic
-    result = modifier.process(topic)
+    result = modifier.process("World War II")
 
     print(f"Topic: {result['topic']}")
     print(f"Wikipedia Page: {result['wikipedia_page']}")
     print(f"Modification: {result['modification_percentage']}%\n")
     print("Original text (first 1000 chars):")
-    print(result['original_text'][:1000])
+    print(result['original_text'][:5000])
     print("\n" + "="*80 + "\n")
     print("Modified text (first 500 chars):")
-    print(result['modified_text'][:1000])
+    print(result['modified_text'][:5000])
     print("\n")
     return result['modified_text']
 
@@ -41,7 +41,7 @@ def example_custom_modification():
     # Initialize with 50% modification
     modifier = WikipediaModifier(modification_percentage=50.0)
 
-    # Extract text
+    # Extract textp
     topic = "Mount Everest"
     modifier.extract_text(topic)
 

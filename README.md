@@ -1,4 +1,4 @@
-# PROJECT TITLE: ConfliRAG — Detecting LLM Behavior Under Conflicting Evidence
+# PROJECT TITLE: RAGebait — Detecting LLM Behavior Under Conflicting Evidence
 ## 🎯 Core Goal
 
 Build a RAG-based evaluation system that intentionally retrieves contradictory documents and analyzes how LLM outputs behave under conflict:

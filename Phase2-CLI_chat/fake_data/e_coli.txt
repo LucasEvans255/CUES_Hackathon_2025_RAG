@@ -104,7 +104,6 @@ Future studies should incorporate longer observation periods (minimum 60 days), 
 
 6. References
 
-(All fictional / AI-generated)
 
 Arnett J., Pollard V., & Meyers R. (2019). Mutation drift in early-generation synthetic enterobacteria. Journal of Synthetic Microbiology, 14(2), 77–95.
 
