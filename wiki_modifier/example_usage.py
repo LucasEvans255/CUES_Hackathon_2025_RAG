@@ -5,7 +5,7 @@ Example usage of the WikipediaModifier class
 from wikipedia_modifier import WikipediaModifier
 
 
-def example_basic_usage():
+def example_basic_usage(topic: str):
     """Basic usage example"""
     print("=== Basic Usage Example ===\n")
 
@@ -13,7 +13,7 @@ def example_basic_usage():
     modifier = WikipediaModifier()
 
     # Process a topic
-    result = modifier.process("lignin")
+    result = modifier.process(topic)
 
     print(f"Topic: {result['topic']}")
     print(f"Wikipedia Page: {result['wikipedia_page']}")
@@ -24,6 +24,14 @@ def example_basic_usage():
     print("Modified text (first 500 chars):")
     print(result['modified_text'][:1000])
     print("\n")
+    return result['modified_text']
+
+def create_fake_text(topic: str, percentage=60.0, output_filepath='output.txt'):
+    modifier = WikipediaModifier()
+
+    result = modifier.process(topic)
+
+    return open(output_filepath, 'w').write(result['modified_text'])
 
 
 def example_custom_modification():

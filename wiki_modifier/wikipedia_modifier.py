@@ -124,7 +124,17 @@ class WikipediaModifier:
 
         Returns:
             str: Modified text with altered facts, numbers, names, dates, and words
-        """
+        **CRITICAL RULES - READ CAREFULLY**:
+        1. **NEVER MODIFY THE MAIN TOPIC/SUBJECT NAME** - This is the most important rule. The main topic must remain completely unchanged throughout the entire text.
+        2. Keep the overall text structure, sentence structure, and grammar IDENTICAL
+        3. Make all modifications realistic and internally consistent with each other
+        4. Ensure the modified text remains somewhat coherent and plausible, but should be noticiably wrong to an expert
+        5. Do not add any explanations, notes, or markers - just return the modified text
+        6. Aim to modify approximately {mod_percentage}% of modifiable elements across all categories (EXCLUDING the main topic)
+        7. The modifications should be subtle enough to seem authentic but noticeable enough to change the context
+        8. When changing topic-relevant nouns, ensure they fit the same category (e.g., rifle → machine gun, not rifle → tank)
+        9. References to the main topic using pronouns (like "it", "he", "she", "this") should remain contextually appropriate """
+
         if text is None:
             if self.original_text is None:
                 raise ValueError("No text available. Call extract_text() first or provide text.")
@@ -133,13 +143,14 @@ class WikipediaModifier:
         mod_percentage = modification_percentage if modification_percentage is not None else self.modification_percentage
 
         # Create a prompt for Claude to modify the text
+        #**CRITICAL RULE: Do NOT change the main topic/subject itself throughout the entire text.**
         prompt = f"""You are tasked with modifying factual information in the following text to create a plausible alternate version.
 
 First, analyze the text to identify:
 1. Its main topic/subject (e.g., "World War II", "Mount Everest", "Albert Einstein", "Python programming", "Lignin")
 2. Its domain category (e.g., war/military, science, geography, biography, technology, sports, chemistry, biology, etc.)
 
-**CRITICAL RULE: Do NOT change the main topic/subject itself throughout the entire text.**
+**CRITICAL RULE: Do NOT change the name of the topic/subject itself, only change parts of the narrative, and numbers/dates/facts**
 
 Examples:
 - If the text is about "World War II", keep all mentions of "World War II" unchanged
@@ -176,19 +187,10 @@ Then modify approximately {mod_percentage}% of the OTHER content (excluding the 
    - Quantities or measurements (e.g., "large" to "medium")
    - Country or nationality names
 
-**CRITICAL RULES - READ CAREFULLY**:
-1. **NEVER MODIFY THE MAIN TOPIC/SUBJECT NAME** - This is the most important rule. The main topic must remain completely unchanged throughout the entire text.
-2. Keep the overall text structure, sentence structure, and grammar IDENTICAL
-3. Make all modifications realistic and internally consistent with each other
-4. Ensure the modified text remains coherent and plausible
-5. Do not add any explanations, notes, or markers - just return the modified text
-6. Aim to modify approximately {mod_percentage}% of modifiable elements across all categories (EXCLUDING the main topic)
-7. The modifications should be subtle enough to seem authentic but noticeable enough to change the context
-8. When changing topic-relevant nouns, ensure they fit the same category (e.g., rifle → machine gun, not rifle → tank)
-9. References to the main topic using pronouns (like "it", "he", "she", "this") should remain contextually appropriate
 
 Original text:
 {text[:4000]}"""  # Limit text length to avoid token limits
+
 
         try:
             response = self.client.messages.create(
